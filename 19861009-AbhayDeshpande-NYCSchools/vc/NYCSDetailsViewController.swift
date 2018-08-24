@@ -125,11 +125,32 @@ extension NYCSDetailsViewController {
     tableView.deselectRow(at: indexPath, animated: true)
   }
   
-  override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-    let header = view as! UITableViewHeaderFooterView
-    header.textLabel?.textColor = UIColor.white
-    let headerImage = headerImages[Int(arc4random_uniform(UInt32(headerImages.count)))]
-    let headerImageView = UIImageView(image: headerImage)
-    header.backgroundView = headerImageView
+  override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+    
+    //assuming that there is only one section for now.
+    
+    if section == 0 {
+      
+      let imageView: UIImageView = UIImageView()
+      imageView.clipsToBounds = true
+      imageView.contentMode = .scaleAspectFill
+      let headerImage = headerImages[Int(arc4random_uniform(UInt32(headerImages.count)))]
+
+      imageView.image =  headerImage
+      return imageView
+    }
+    
+    return nil
+    
+  }
+  
+  override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    
+    if section == 0 {
+        return view.frame.height / 3
+    }
+    
+    return UITableViewAutomaticDimension
+    
   }
 }
