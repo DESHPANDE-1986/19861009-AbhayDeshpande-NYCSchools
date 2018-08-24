@@ -19,6 +19,7 @@ class NYCSchoolsViewController: UITableViewController {
     super.viewDidLoad()
     navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .done, target: self, action: nil)
     title = "NYC High Schools"
+    navigationController?.navigationBar.prefersLargeTitles = true
     getNYCSchools()
   }
   
