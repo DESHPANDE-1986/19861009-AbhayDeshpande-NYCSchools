@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yOt-Ic-yhP">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Courier.ttc">
+            <string>Courier</string>
+            <string>Courier-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Schools View Controller-->
+        <scene sceneID="y4i-Qf-UQt">
+            <objects>
+                <tableViewController id="Fp1-hG-H35" customClass="NYCSchoolsViewController" customModule="_9861009_AbhayDeshpande_NYCSchools" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="1fy-hE-OBA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="nycSchoolTableViewCell" rowHeight="59" id="vSr-JK-eXw" customClass="NYCSchoolTableViewCell" customModule="_9861009_AbhayDeshpande_NYCSchools" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="59"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vSr-JK-eXw" id="Hea-Yl-5iv">
+                                    <rect key="frame" x="0.0" y="0.0" width="341" height="58.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lVv-JA-Cjv">
+                                            <rect key="frame" x="10" y="28" width="0.0" height="1"/>
+                                            <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="20"/>
+                                            <color key="textColor" red="0.098304279148578644" green="0.31401306390762329" blue="0.5752907395362854" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="lVv-JA-Cjv" secondAttribute="trailing" id="5e4-dt-ePD"/>
+                                        <constraint firstAttribute="bottom" secondItem="lVv-JA-Cjv" secondAttribute="bottom" constant="29.5" id="RAB-DZ-Ia6"/>
+                                        <constraint firstItem="lVv-JA-Cjv" firstAttribute="top" secondItem="Hea-Yl-5iv" secondAttribute="top" constant="28" id="W7D-GB-LHS"/>
+                                        <constraint firstItem="lVv-JA-Cjv" firstAttribute="leading" secondItem="Hea-Yl-5iv" secondAttribute="leading" constant="10" id="pUt-hX-CAw"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="lVv-JA-Cjv" id="xuU-kt-n5Z"/>
+                                    <segue destination="Ck8-Ki-frV" kind="show" identifier="schoolDetail" id="j9k-Ek-3Z2"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Fp1-hG-H35" id="aMC-4a-fKq"/>
+                            <outlet property="delegate" destination="Fp1-hG-H35" id="stm-Ck-vlS"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="gT4-h8-CUb"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dEo-SQ-yZM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1684" y="484"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="p6R-PK-Uft">
+            <objects>
+                <navigationController id="yOt-Ic-yhP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gUG-Dd-7vQ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="20"/>
+                            <color key="textColor" red="0.098304279148578644" green="0.31401306390762329" blue="0.5752907395362854" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Fp1-hG-H35" kind="relationship" relationship="rootViewController" id="cag-vl-rgZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="40S-PG-qPU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="473.60000000000002" y="484.85757121439286"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="dWO-5w-TW7">
+            <objects>
+                <tableViewController id="Ck8-Ki-frV" customClass="NYCSDetailsViewController" customModule="_9861009_AbhayDeshpande_NYCSchools" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="pkB-cx-5ZX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="nycSDetailTableViewCell" rowHeight="59" id="Eg3-Bz-p7g" customClass="NYCSDetailTableViewCell" customModule="_9861009_AbhayDeshpande_NYCSchools" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="55.5" width="375" height="59"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Eg3-Bz-p7g" id="7rD-lP-kBd">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="58.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dcf-m4-Tds">
+                                            <rect key="frame" x="10" y="28" width="0.0" height="1"/>
+                                            <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="15"/>
+                                            <color key="textColor" red="0.098304279148578644" green="0.31401306390762329" blue="0.5752907395362854" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Dcf-m4-Tds" firstAttribute="top" secondItem="7rD-lP-kBd" secondAttribute="top" constant="28" id="DqG-pV-GLg"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Dcf-m4-Tds" secondAttribute="trailing" id="Lg9-h1-6Sm"/>
+                                        <constraint firstAttribute="bottom" secondItem="Dcf-m4-Tds" secondAttribute="bottom" constant="29.5" id="hzS-8A-1VP"/>
+                                        <constraint firstItem="Dcf-m4-Tds" firstAttribute="leading" secondItem="7rD-lP-kBd" secondAttribute="leading" constant="10" id="xzi-Cp-V1Z"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="info" destination="Dcf-m4-Tds" id="ZP5-BO-qZ1"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Ck8-Ki-frV" id="2Hw-Ul-Ydf"/>
+                            <outlet property="delegate" destination="Ck8-Ki-frV" id="HOq-T9-SpD"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="te5-bC-yha" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2517.5999999999999" y="483.50824587706148"/>
+        </scene>
+    </scenes>
+</document>

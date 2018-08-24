@@ -1,0 +1,16 @@
+PODS:
+  - LLSpinner (0.0.1)
+
+DEPENDENCIES:
+  - LLSpinner
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - LLSpinner
+
+SPEC CHECKSUMS:
+  LLSpinner: 0ed607d59b3a447ddd157c29ef684de7a5a285ad
+
+PODFILE CHECKSUM: f06d184f52902c7b5274ff6bcb6afaad6d91e2e1
+
+COCOAPODS: 1.5.3
