@@ -5,7 +5,7 @@ screen2: Detail overview of the Heigh schools.
 
 @dependencies : LLSpiner network activity indicator. should be added as a pod.
 
-ScreenShots:
+Screenshots:
 <img width="1392" alt="screen shot 2018-08-24 at 4 21 49 am" src="https://user-images.githubusercontent.com/7987200/44582451-8aa69880-a756-11e8-8d07-95f74342aee9.png">
 <img width="466" alt="screen shot 2018-08-24 at 4 23 00 am" src="https://user-images.githubusercontent.com/7987200/44582452-8b3f2f00-a756-11e8-9be2-b9e8d49319d1.png">
 <img width="466" alt="screen shot 2018-08-24 at 4 23 07 am" src="https://user-images.githubusercontent.com/7987200/44582453-8b3f2f00-a756-11e8-9d6d-d33035b8d126.png">
